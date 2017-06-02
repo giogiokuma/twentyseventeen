@@ -1,0 +1,162 @@
+20170602
+**usp submitted form **
+the_content() に　ショートコード
+
+
+<p>下記のフォームにあなたがアップロードしたYoutubeのURLアドレスを入力して送信してください</p>
+
+[usp_name]
+[usp_url]
+[usp_title]
+[usp_custom_field form="register" id="1"]
+[usp_content]
+[usp_captcha]
+[usp_email]
+[usp_form id="submit"]
+
+<input type="hidden" name="usp-is-register" value="1" />
+------
+**テンプレートタグ**
+-> これをテンプレートに埋め込む
+https://plugin-planet.com/usp-pro-template-tags/
+----------------------------
+20170602
+SSLにアップグレード => 　url: https://jomoevent.com  
+ディレクトリを kinu => url: https://jomoevent.com/kinu
+
+1. SSL にアップグレードする
+
+2. プラグインを
+User Submitted Posts Pro
+GD Rating Sustem 
+
+
+----------------------------
+20170601
+【User Submitted Postsの使い方】
+	**ショートコード**
+	[user-submitted-posts]
+	**テンプレートタグ**
+	<?php if (function_exists('user_submitted_posts')) user_submitted_posts(); ?>
+  
+【USP プロバージョン★★★】
+サポートサイト
+https://plugin-planet.com/usp-pro-action-filter-hooks/
+
+
+
+**テンプレートを修正してデータを使いたい**
+  **ショートコード **
+  https://plugin-planet.com/usp-pro-action-filter-hooks/
+
+
+【GD Rating System 使い方★★★】
+
+
+---
+そのほか使い方
+- リンク登録
+- ニュース登録 投稿　タイトル　投稿者
+- コンタクトフォーム　
+
+
+----------------------------
+*テストサイト
+http://www.ohatadesign.sakura.ne.jp/shuppan/
+
+
+------
+"wordpress plugin upload youtube video" で検索
+
+** User Submitted Posts ★★★  これを試す（20170529）
+使い方　日本語へ変換 
+http://kachibito.net/wordpress/user-submitted-posts.html
+
+**日本語化**
+http://gate.rickeluster.com/c15_wp/1396/
+
+http://news.mynavi.jp/c_cobs/news/kachibito/2011/03/wordpressuser-submitted-posts.html
+----
+
+
+
+
+** Youtube Widget Responsive
+https://ja.wordpress.org/plugins/youtube-widget-responsive/#description
+
+
+**YouTube Upload Widget  
+https://wordpress.org/plugins/youtube-upload-widget/
+
+
+探す
+http://www.wpbeginner.com/plugins/how-to-record-and-upload-youtube-videos-directly-from-wordpress/
+
+
+-----
+上毛登録チャンネル
+https://www.youtube.com/user/RaijinCom
+
+Youtube
+バラ園の動画例　https://youtu.be/kJyOQvqPrSs
+
+-----
+アップロード設定
+https://support.google.com/youtube/answer/2660027?hl=ja
+
+
+--------
+【重要】
+WordPress は　URLコピーだけで　Youtube 動画が表示できる
+
+---------------------
+20170530 
+##User Submitted Posts　について##
+* ユーザーにコンテンツを投稿できる機能を設置
+
+動画を投稿する　/plugins/user-submitted-posts/views/submission-form.php
+
+ ->  WP 本体の投稿に反映 -> レビュー待ちの状態に　-> 
+ -> single.php を修正しなければいけない
+ 
+------------------------
+* front-page.php トップページ
+* template-parts
+  - page
+    - content-front-page.php
+    
+------------------------
+** Rating-Widget   **
+https://blog.s-giken.net/201.html
+
+
+1. ライブプレビュー
+
+** Enable for Blog Posts **
+評価点の投稿を編集するか
+ 
+-----------------------
+20170530 
+チェック️ボックス同意 -> 送信
+
+<script type="text/javascript">
+  function() {
+    if (document.form.agree.checked == true) {
+      return true; 
+    } else {
+      alert("利用規約に同意してください。"); 
+    }
+  }
+</script>
+
+<form action="***.html" method="post" name="form" onsubmit="return check();">
+<input type="checkbox" name="agree" value="1">
+<input type="image" src="***.gif" name="***" alt="***" border="0">
+</form>
+
+
+ 
+-----------------------
+
+エラーメッセージを修正
+ 
